@@ -80,12 +80,18 @@ angular.module('routes',['app.controllers','tabs.routes'])
 
       })
 
+      .state('guidance',{
+        url:'/guidance',
+        templateUrl:'common/guidance.html',
+        controller:'guidanceCtrl'
+      })
+
 
 
 
 
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/tab11/home');
+    $urlRouterProvider.otherwise('/guidance');
 
   });
