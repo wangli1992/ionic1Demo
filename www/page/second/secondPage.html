@@ -1,14 +1,19 @@
 
 
-<ion-view view-title="第二页">
+<ion-view  hide-back-button="false" hide-nav-bar="false">
 
-  <ion-nav-bar class="bar-bgColor">
-    <ion-nav-back-button class="button-light">
+  <!--<ion-nav-bar class="bar-bgColor"  >-->
+    <!--<ion-nav-back-button class="button-light">返回-->
+    <!--</ion-nav-back-button>-->
+  <!--</ion-nav-bar>-->
 
-    </ion-nav-back-button>
-  </ion-nav-bar>
-
-
+  <header class="bar bar-header bar-follower">
+    <button class="button button-icon icon " ng-click="goBack()">
+      <img src="img/icon-arrow_left.png" style="max-width: 25px; max-height:25px;  padding-top: 7px;" alt=""/>
+      <span style="color:white;">返回</span>
+    </button>
+    <h1 class="title bar-follower-font">详情</h1>
+  </header>
 
   <ion-content>
     <h1> hhhhhhhhh</h1>

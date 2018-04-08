@@ -2,7 +2,6 @@
 .bar-bgColor{
   background-color: #2bcab2;
   color: white;
-  /*height: 64px;*/
 
 }
 /*.bar .title{*/
@@ -55,17 +54,16 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
 }
-#intro_page1 {
-  background: url('../img/guidance/slide1.jpg') no-repeat center center fixed;
+
+.global_ios {
+  margin-bottom: constant(safe-area-inset-bottom);
+  height: calc(100% - constant(safe-area-inset-bottom) - constant(safe-area-inset-top));
+  margin-top: constant(safe-area-inset-top);
+  background-color: transparent;
+   /*margin-top: 20px;*/
 }
 
-#intro_page2 {
-  background: url('../img/guidance/slide2.jpg');
-}
 
-#intro_page3 {
-  background: url('../img/guidance/slide3.jpg');
-}
 /*.padding{*/
   /*margin-top: 21px;*/
 /*}*/

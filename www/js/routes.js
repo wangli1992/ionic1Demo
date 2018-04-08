@@ -26,7 +26,7 @@ angular.module('routes',['app.controllers','tabs.routes'])
 
       // Each tab has its own nav history stack:
 
-      .state('tab.dash', {
+      .state('tab.home', {
         url: '/home',
         views: {
           'tab-home': {
@@ -84,14 +84,17 @@ angular.module('routes',['app.controllers','tabs.routes'])
         url:'/guidance',
         templateUrl:'common/guidance.html',
         controller:'guidanceCtrl'
-      })
+      });
 
-
+    $urlRouterProvider.otherwise(function ($injector) {
+      var $state = $injector.get("$state");
+      $state.go('guidance');
+    });
 
 
 
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/guidance');
+    //$urlRouterProvider.otherwise('guidance');
 
   });
