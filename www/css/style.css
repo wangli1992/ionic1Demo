@@ -63,10 +63,17 @@
    /*margin-top: 20px;*/
 }
 
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active{color:#2bcab2 !important;}
 
-/*.padding{*/
-  /*margin-top: 21px;*/
+
+
+/*.toast-warning{*/
+  /*background-color: black !important;*/
 /*}*/
+
+
+
+
 
 
 

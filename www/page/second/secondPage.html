@@ -2,15 +2,57 @@
 <ion-view  hide-back-button="false" hide-nav-bar="false" >
 
   <ion-header-bar class="bar bar-header bar-follower">
-    <button class="button button-icon icon " ng-click="goBack()">
+    <button class="button button-icon icon "  ng-disabled="loginForm.$invalid" ng-click="goBack()"  >
       <img src="img/icon-arrow_left.png" style="max-width: 25px; max-height:25px;  padding-top: 7px;" alt=""/>
       <!--<span style="color:white;">返回</span>-->
     </button>
     <h1 class="title bar-follower-font">详情</h1>
+    <button class="button button-clear " ng-click="save()"  style="color: white;font-weight: 400;font-size: 16px;" ng-disabled="loginForm.$invalid">
+     保存
+    </button>
   </ion-header-bar>
 
   <ion-content>
-    <h1> hhhhhhhhh</h1>
+    <form name="loginForm" novalidate>
+    <ion-item  class="item-avatar item-icon-right" type="item-text-wrap" >
+      <img ng-src="img/ben.png" style="width: 50px;height: 50px;float: left;">
+      <p style="padding-left: 10px;">Mr.li</p>
+      <i class="icon ion-chevron-right icon-accessory"></i>
+    </ion-item>
+    <div class="card">
+      <div class="item item-text-wrap item-avatar">
+        <img ng-src="img/adam.jpg" style="width:50px;height:50px;">
+         zhang xian sheng
+      </div>
+    </div>
+
+    <div class="row row-wrap" >
+      <div class="col col-25" style="text-align: center" ng-repeat="person in personArray">
+      <img ng-src="{{person.userAvatar}}" style="width: 50px;height: 50px;">
+        <div>{{person.name}}</div>
+      </div>
+
+    </div>
+
+
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Username:</span>
+        <input type="text" ng-model="user.username" placeholder="请输入用户名" maxlength="11" required>
+        <i class="icon ion-camera"></i>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password:</span>
+        <input type="password" ng-model="user.userpsw" placeholder="请输入用户密码" MAXLENGTH="16" required>
+        <i class="icon ion-camera"></i>
+      </label>
+    </div>
+
+    <button class="button button-positive" style="margin-left: calc(50% - 60px);width: 120px;height: 40px;" ng-click="loginClick()" ng-disabled="loginForm.$invalid">
+      button-positive
+    </button>
+    </form>
+
 
   </ion-content>
 </ion-view>

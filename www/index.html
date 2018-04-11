@@ -18,7 +18,9 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/public.css" rel="stylesheet">
 
+    <link href="lib/toaster/toaster.min.css" rel="stylesheet">
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
@@ -40,6 +42,9 @@
     <script src="page/person/personCtrl.js"></script>
     <script src="page/second/secondPageCtrl.js"></script>
     <script src="page/home/homeCtrl.js"></script>
+    <script src="js/directive.js"></script>
+    <script src="lib/toaster/toaster.min.js"></script>
+    <script src="page/third/thirdCtrl.js" ></script>
   </head>
   <body ng-app="starter">
     <!--
@@ -50,6 +55,13 @@
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     -->
+
+
+    <toaster-container
+      toaster-options="{'limit':1, 'time-out': 2000000, 'tap-to-dismiss':true, 'mouseover-timer-stop': false, 'prevent-duplicates': true}"
+      style="margin-top:55% !important;">
+
+    </toaster-container>
     <ion-nav-view class="global_ios"></ion-nav-view>
   </body>
 </html>

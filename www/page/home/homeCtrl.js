@@ -1,5 +1,24 @@
 angular.module('app.controllers')
-  .controller('homeCtrl',function($scope,$ionicHistory,$state,$ionicActionSheet,$ionicPopup) {
+  .controller('homeCtrl',function($scope,$ionicHistory,$state,$ionicActionSheet,$ionicPopup,$rootScope) {
+
+
+    $rootScope.$on('secondEvent',function (event,user) {
+      $scope.user = user;
+      console.log('用户名为：'+$scope.user.username);
+    });
+
+    $scope.$on('$ionicView.enter',function (event,username) {
+      console.log('enter');
+    });
+
+    $scope.$on('$ionicView.leave',function (event,username) {
+      console.log('leave');
+    });
+
+
+    $scope.$on('$ionicView.unloaded',function (event,username) {
+      console.log('unloaded');
+    });
 
     $scope.goToNextPage = function (userId) {
       console.log('next click' + userId);
@@ -64,5 +83,8 @@ angular.module('app.controllers')
       // $timeout(function() {
       //   $scope.hideSheet()
       // }, 2000);
-    }
+    };
+
+
+
   })

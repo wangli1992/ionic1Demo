@@ -14,8 +14,14 @@ angular.module('app.controllers', [])
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
-    enableFriends: true
+    isOpen: true
   }
+
+  $scope.changeClick = function () {
+
+    console.log('toggle is open :'+$scope.settings.isOpen);
+  }
+
 })
 
 // .controller('PersonCtrl',function ($scope) {

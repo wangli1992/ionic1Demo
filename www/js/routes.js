@@ -84,7 +84,14 @@ angular.module('routes',['app.controllers','tabs.routes'])
         url:'/guidance',
         templateUrl:'common/guidance.html',
         controller:'guidanceCtrl'
-      });
+      })
+
+      .state('thirdPage',{
+        url:'/thirdPage',
+        templateUrl:'page/third/thirdPage.html',
+        controller:'thirdCtrl'
+      })
+
 
     $urlRouterProvider.otherwise(function ($injector) {
       var $state = $injector.get("$state");
