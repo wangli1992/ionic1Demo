@@ -12,8 +12,10 @@
     "@ionic/pro": "1.0.20",
     "cordova-ios": "^4.5.4",
     "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-image-picker": "^1.1.3",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.19",
+    "cordova-plugin-mediapicker-dmcbig": "^2.0.6",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-whitelist": "^1.3.3"
   },
@@ -23,7 +25,11 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-image-picker": {
+        "PHOTO_LIBRARY_USAGE_DESCRIPTION": "请允许小跟班访问您的系统相册"
+      },
+      "cordova-plugin-mediapicker-dmcbig": {}
     },
     "platforms": [
       "ios"

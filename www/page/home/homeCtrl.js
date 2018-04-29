@@ -1,5 +1,5 @@
 angular.module('app.controllers')
-  .controller('homeCtrl',function($scope,$ionicHistory,$state,$ionicActionSheet,$ionicPopup,$rootScope) {
+  .controller('homeCtrl',function($scope,$ionicHistory,$state,$ionicActionSheet,$ionicPopup,$rootScope,CustomMethod) {
 
 
     $rootScope.$on('secondEvent',function (event,user) {
@@ -9,6 +9,10 @@ angular.module('app.controllers')
 
     $scope.$on('$ionicView.enter',function (event,username) {
       console.log('enter');
+      $scope.isStr = CustomMethod.judgeIsString('1234')
+      console.log('大于5吗：'+$scope.isStr );
+      $scope.itemArr = ['语文: 89.5','数学: 80','马克思主义: 90','外语: 120','思想品德: 89.5','计算机科学与技术: 89.5'];
+
     });
 
     $scope.$on('$ionicView.leave',function (event,username) {

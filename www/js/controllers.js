@@ -17,6 +17,11 @@ angular.module('app.controllers', [])
     isOpen: true
   }
 
+  $scope.convertMsgtoHtml = function (msg) {
+    console.log('shuchule');
+    return convertMsgtoHtml(msg);
+};
+
   $scope.changeClick = function () {
 
     console.log('toggle is open :'+$scope.settings.isOpen);

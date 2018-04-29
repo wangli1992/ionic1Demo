@@ -7,13 +7,46 @@
 
   <ion-content class="padding">
     <button  class="button button-positive" style="height:50px;width:100px;font-size: 17px;" ng-click="goToNextPage(110)" >nextpage </button>
-    <button  class="button button-positive" style="height:50px;width:100px;font-size: 17px;" ng-click="alertShow()" >alert show </button>
+    <button  class="button button-positive" style="height:50px;width:100px;font-size: 17px;" ng-click="alertShow()" item-end>alert show </button>
 
     <div style="margin-top:30px;">
     <button class="button button-clear" style="color:red;">
       Clear Button
     </button>
     </div>
+
+   
+    <div class="row row-wrap" style="padding-top: 10px;padding-left: 0px;">
+      <div class="col col-25" style="text-align: center;color:#2bcab2;font-size: 16px;">
+          考试时间
+      </div>
+      <div class="col col-25" style="text-align: center;color:#2bcab2;font-size: 16px;">
+          &nbsp;&nbsp;考试名称
+      </div>
+      <div class="col col-20" style="text-align: center;color:#2bcab2;font-size: 16px;">
+          考试分数：100
+      </div>
+      <div class="col col-30" style="text-align: center;color:#2bcab2;font-size: 16px;">
+          班级平均分
+      </div>
+  </div>
+
+  <!-- <div class="post-short-footer">
+    
+    <div class="post-short-meta-container">
+       <span class="cat-links" style="margin-left:15px;"><i class="fa fa-folder-open-o" aria-hidden="true"></i>语文：1234 </span>
+       <span class="cat-links" style="margin-left:15px;"><i class="fa fa-folder-open-o" aria-hidden="true"></i>Some text is importtant2 </span>
+       <span class="cat-links" style="margin-left:15px;"><i class="fa fa-folder-open-o" aria-hidden="true"></i>Some text is importtant3</span>
+       <span class="cat-links" style="margin-left:15px;"><i class="fa fa-folder-open-o" aria-hidden="true"></i>Some text is importtant4 </span>
+      
+ </div> -->
+ 
+   
+    <div class="post-short-meta-container" style="margin-left:15px;margin-right: 15px;" >
+      <span ng-repeat="item in itemArr" style="margin-left:1em;margin-right:1em;">{{item}}</span>
+    </div>
+  
+
   </ion-content>
 </ion-view>
 

@@ -46,5 +46,21 @@ angular.module('starter.services', [])
       }
       return null;
     }
-  };
-});
+  }
+})
+  .factory('CustomMethod',function () {
+    var method = {};
+    method.judgeIsString = function (str) {
+      var result = false;
+      if(str.length>5){
+        result = true;
+      }else {
+        result = false;
+      }
+      return result;
+
+    }
+
+    return method;
+
+  });

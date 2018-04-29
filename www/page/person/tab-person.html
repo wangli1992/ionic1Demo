@@ -5,10 +5,49 @@
     <h1 class="title bar-follower-font">个人中心</h1>
   </ion-header-bar>
 
-  <ion-content class="padding">
+  <!-- <div class="item  float-button" style="height: 44px;padding-top:10px;">
+    <span style="font-size: 16px;color: black !important;font-weight: 400 !important;margin-left:-3px;">统计范围：</span>
+    <ion-scroll delegate-handle="small" direction="x" on-scroll="scroll()" style="height: 34px;position: absolute;top:9px;left:85px;  width: calc(100% - 92px);" class="exam_scroll_view">
+      <button class="button button-clear" ng-repeat="exam in subjectExamDetailArr track by $index" id="subject{{$index}}" ng-style="{'color':selectExamSubjectIndex==$index?'orange':'black'}" style="font-size: 15px;margin-top:-11px;" ng-click="chooseSubjectStatistical($index)">{{exam.subjectName}}
+        <div ng-style="{'width':(exam.subjectWidth-15)+'px'}" style="height: 2px;background-color: orange;  position: absolute; top:42px; margin-left: 3px; " ng-if="selectExamSubjectIndex==$index"></div>
+      </button>
+    </ion-scroll>
 
+  </div> -->
 
-    <button  class="button button-positive" style="height:50px;width:100px;font-size: 17px;" ng-click="goToNextPage(110)">nextpage </button>
+  <!--<a class="button icon button-balanced ion-plus-round float-button"  style="bottom: 50px;"></a>-->
+  <ion-content>
+    <ion-list>
+      <button class="button button-positive" ng-click="choosePhotos()" style="margin-left: calc(50% - 45px);margin-top: 25px;">选择相册</button>
+      <div class="item" ng-repeat="img in imgArr">
+        <img ng-src="{{img}}" style="width: 120px;height: 120px;margin-left:calc(50% - 60px);"/>
+        <img src={{img}} style="width: 120px;height: 120px;margin-left:calc(50% - 60px);"/>
+      </div> 
+
+      <img style="width: 120px;height: 120px;"   src="file:///var/mobile/Containers/Data/Application/12C35A11-99F8-4A29-A397-E124246E9728/tmp/cdv_photo_001.jpg" >
+
+      <!-- <img src='img/adam.jpg' style="width: 100px;height: 100px;" /> -->
+      <!-- <div class=LightBox ng-click=hideBigImage()>
+        <div class=ImgViewer>
+          <ul class=swiper-wrapper>
+            <li class=swiper-slide>
+              <img src='img/adam.jpg'>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <com-Image-Box> <div class=LightBox ng-click=hideBigImage()>
+      <div class=ImgViewer>
+        <ul class=swiper-wrapper>
+          <li class=swiper-slide>
+            <img src='img/adam.jpg'>
+          </li>
+        </ul>
+      </div>
+    </div></com-Image-Box>
+      <img class="imgView" style="width: 80px;height: 80px;" /> -->
+    </ion-list>
 
   </ion-content>
 </ion-view>
