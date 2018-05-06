@@ -19,13 +19,16 @@
   <ion-content>
     <ion-list>
       <button class="button button-positive" ng-click="choosePhotos()" style="margin-left: calc(50% - 45px);margin-top: 25px;">选择相册</button>
-      <div class="item" ng-repeat="img in imgArr">
-        <img src="{{img}}" style="width: 120px;height: 120px;margin-left:calc(50% - 60px);"/>
-        
-        <!-- <img src={{img}} style="width: 120px;height: 120px;margin-left:calc(50% - 60px);"/> -->
+      <div class="item">第一组</div>
+      <div class="item" ng-repeat="image in imageArr">
+        <img ng-src="{{image}}" style="width: 120px;height: 120px;margin-left:calc(50% - 60px);"/>
+      </div> 
+      <div class="item">第二组</div>
+      <div class="item" ng-repeat="image in imageArr">
+        <img src="{{image}}" style="width: 120px;height: 120px;margin-left:calc(50% - 60px);"/>
       </div> 
 
-      <img  class="demoImg" style="width: 120px;height: 120px;margin-top:20px;margin-left:calc(50% - 60px);"/>
+      <!-- <img style="width: 120px;height: 120px;"   src="file:///var/mobile/Containers/Data/Application/12C35A11-99F8-4A29-A397-E124246E9728/tmp/cdv_photo_001.jpg" > -->
 
       <!-- <img src='img/adam.jpg' style="width: 100px;height: 100px;" /> -->
       <!-- <div class=LightBox ng-click=hideBigImage()>

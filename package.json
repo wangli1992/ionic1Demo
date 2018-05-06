@@ -11,8 +11,18 @@
   "dependencies": {
     "@ionic/pro": "1.0.20",
     "cordova-ios": "^4.5.4",
+<<<<<<< HEAD
     "cordova-plugin-device": "^2.0.1",
+=======
+    "cordova-plugin-camera": "^4.0.3",
+<<<<<<< HEAD
+    "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-image-picker": "file:///Users/hewz/Desktop/image-picker/overview",
+=======
+    "cordova-plugin-device": "^2.0.2",
+>>>>>>> f5dcb6172236d39170402dc041317a34e2da0d4f
     "cordova-plugin-image-picker": "^1.1.3",
+>>>>>>> 3dbca0ccd45e6ffdf32326a61f43504b2fd8101c
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.19",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -25,9 +35,23 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-mediapicker-dmcbig": {},
+      "cordova-plugin-camera": {},
       "cordova-plugin-image-picker": {
+<<<<<<< HEAD
         "PHOTO_LIBRARY_USAGE_DESCRIPTION": "请允许小跟班访问您的系统相册"
       }
+=======
+<<<<<<< HEAD
+        "PHOTO_LIBRARY_USAGE_DESCRIPTION": " "
+      }
+=======
+        "PHOTO_LIBRARY_USAGE_DESCRIPTION": "请允许访问您的相册"
+      },
+      "cordova-plugin-mediapicker-dmcbig": {},
+      "cordova-plugin-camera": {}
+>>>>>>> 3dbca0ccd45e6ffdf32326a61f43504b2fd8101c
+>>>>>>> f5dcb6172236d39170402dc041317a34e2da0d4f
     },
     "platforms": [
       "ios"
