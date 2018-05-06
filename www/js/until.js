@@ -1,4 +1,5 @@
 //把消息转换成Html
+/*
 function convertMsgtoHtml(msg) {
 	var html = "",
 		elems, elem, type, content;
@@ -301,4 +302,4 @@ function convertGroupTipMsgToHtml(content) {
 			break;
 	}
 	return text;
-}
+}*/

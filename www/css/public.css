@@ -29,6 +29,9 @@
   left:0px;
   z-index: 9999;
 }
+.demoImg{ 
+  background-image: url("img/adam.jpg");
+ }
 
 
 /* .post-short-footer {
