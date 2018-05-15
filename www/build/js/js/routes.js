@@ -1,5 +1,5 @@
 angular.module('routes',['app.controllers','tabs.routes'])
-  .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$compileProvider) {
+  .config(['$stateProvider', '$urlRouterProvider', '$ionicConfigProvider', '$compileProvider', function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$compileProvider) {
 
 
     //缓存信息配置
@@ -104,4 +104,4 @@ angular.module('routes',['app.controllers','tabs.routes'])
     // if none of the above states are matched, use this as the fallback
     //$urlRouterProvider.otherwise('guidance');
 
-  });
+  }]);

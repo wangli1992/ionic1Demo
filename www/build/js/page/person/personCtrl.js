@@ -1,5 +1,5 @@
 angular.module('app.controllers')
-  .controller('personCtrl',function($scope,$ionicHistory,$ionicScrollDelegate,$state) {
+  .controller('personCtrl',['$scope', '$ionicHistory', '$ionicScrollDelegate', '$state', function($scope,$ionicHistory,$ionicScrollDelegate,$state) {
 
     $scope.$on("$ionicView.beforeEnter",function () {
       console.log('person page --');
@@ -68,4 +68,4 @@ angular.module('app.controllers')
     //   };
     //   img.src = url;
     // }
-  })
+  }])

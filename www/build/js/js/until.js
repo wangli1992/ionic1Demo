@@ -1,30 +1,3 @@
-
-function CheckUrl(str) {
-	var RegUrl1 = new RegExp();
-	var reg1 = "\\bhttps?://[a-zA-Z0-9\\-.]+(?::(\\d+))?(?:(?:/[a-zA-Z0-9\\-._?,'+\\&%$=~*!():@\\\\]*)+)?";
-	var RegUrl2 = new RegExp();
-	var reg2 = "www.[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?"
-	RegUrl1.compile(reg1);
-	RegUrl2.compile(reg2);
-    if (!RegUrl1.test(str)&&!RegUrl2.test(str)) {
-        return false;
-	}
-	
-    return true;
-}
-
-
-function encodeHtml(str){
-   var html = '';
-	html += webim.Tool.formatText2Html(str);
-
-	var urls = /(\b(https?|ftp):\/\/[A-Z0-9+&@#\/%?=~_|!:,.;-]*[-A-Z0-9+&@#\/%=~_|])/gim;
-        if(html.match(urls)) {
-            html = html.replace(urls, "<a href=\"$1\" target=\"_system\">$1</a>");
-        }
-    return html ;
-}
-
 //把消息转换成Html
 function convertMsgtoHtml(msg) {
 	var html = "",

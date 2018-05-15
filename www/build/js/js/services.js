@@ -47,7 +47,7 @@ angular.module('starter.services', [])
       return null;
     }
   }
-}) 
+})
   .factory('CustomMethod',function () {
     var method = {};
     method.judgeIsString = function (str) {
@@ -60,11 +60,7 @@ angular.module('starter.services', [])
       return result;
 
     }
-    
-    method.getUsername = function(callback){
-      var username = "张三";
-      callback(username);
-    }
+
     return method;
 
   });
