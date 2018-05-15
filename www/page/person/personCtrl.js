@@ -11,8 +11,8 @@ angular.module('app.controllers')
       $scope.selectExamSubject = {};//所选择的考试，默认显示数组第一个
        $scope.message = '';
       $scope.testImg = "data:image/jpeg;base64,"
-      +
-       "";
+      $scope.localImg = 'img/adam.jpg';
+      
       console.log('classId:'+$scope.classId+'--examId:'+$scope.examId);
       //测试数据
     })

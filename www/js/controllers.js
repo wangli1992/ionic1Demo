@@ -19,7 +19,7 @@ angular.module('app.controllers', [])
 
   $scope.convertMsgtoHtml = function (msg) {
     console.log('shuchule');
-    return convertMsgtoHtml(msg);
+   // return convertMsgtoHtml(msg);
 };
 
   $scope.changeClick = function () {
